@@ -1,6 +1,6 @@
 <template>
   <div class="col-3">
-    <router-link to="#">
+    <router-link :to="{ name: 'users-profile', params:{ id: user.id} }">
       <img :src="userImage" width="auto" height="140px" />
     </router-link>
     <h2>{{ user.name }}</h2>

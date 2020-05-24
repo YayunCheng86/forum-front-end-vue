@@ -55,9 +55,14 @@ export default new Router({
       component: () => import('../views/UsersTop.vue')
     },
     {
+      path: '/users/:id',
+      name: 'users-profile',
+      component: () => import('../views/User.vue')
+    },
+    {
       path: '*',
       name: 'not-found',
       component: NotFound
-    }
+    },
   ]
 })
